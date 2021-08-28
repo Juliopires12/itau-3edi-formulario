@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" media="">
+    <title>Seu Formulario</title>
+    
+
+</head>
+ <body>
+
+    <div>
+       <h1 id="titulo">Cadastro de proposta </h1>
+       <p id="subtitulo">Preencha seu cadastro</p>
+       <br>
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome" >Nome</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+            </div>
+            <div class="campo">
+                <label for="rg" >RG</label>
+                <input type="text" name="rg" id="rg" data-js="rg" placeholder="Digite seu rg">
+            </div>
+            <div class="campo">
+                <label for="cpf">CPF</label>
+                <input type="text" name="cpf" id="cpf" data-js="cpf" placeholder="Digite seu cpf" required>
+            </div>
+        </fieldset>
+
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="endereço">Endereço</label>
+                <input type="text" name="endereço" id="endereço" placeholder="Digite nome da rua" required>
+                </div>
+            <div class="campo">
+                <label for="cep">CEP</label>
+                <input type="text" name="cep" id="cep" data-js="cep" placeholder="Digite o cep">
+            </div>
+            <div class="campo">
+                <label for="cidade">Cidade</label>
+                <input type="text" name="cidade" id="cidade" placeholder="Digite a cidade">
+                </div>         
+            <div class="campo">
+                <label for="estado">Estado</label>
+                <select id="estado">
+                    <option selected disabled value="">Selecione</option>
+                    <option>Acre</option>
+                    <option>Alagoas</option>
+                    <option>Amapa</option>
+                    <option>Amazonas</option>
+                    <option>Bahia</option>
+                    <option>Ceara</option>
+                    <option>Espirito Santo</option>
+                    <option>Goias</option>
+                    <option>Maranhão</option>
+                    <option>Mato Grosso</option>
+                    <option>Mato Grosso do Sul</option>
+                    <option>Minas Gerais</option>
+                    <option>Para</option>
+                    <option>Paraiba</option>
+                    <option>Parana</option>
+                    <option>Pernanbuco</option>
+                    <option>Piaui</option>
+                    <option>Rio de Janeiro</option>
+                    <option>Rio Grando do Norte</option>
+                    <option>Rio Grande do Sul</option>
+                    <option>Rondonia</option>
+                    <option>Roraima</option>
+                    <option>Santa Catarina</option>
+                    <option>São Paulo</option>
+                    <option>Sergipe</option>
+                    <option>Tocantins</option>
+                    <option>Distrito Federal</option>
+                </select>
+     
+            </div>
+        </fieldset>
+
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="didite seu email">
+            </div>
+            <div class="campo">
+                <label for="telefone">Telefone</label>
+                <input type="tel" name="telefone" id="telefone" data-js="telefone" placeholder="digite o telefone">
+            </div>
+            <div class="campo">
+                <label for="celular">Celular</label>
+                <input type="tel" name="celular" id="celular" data-js="celular" placeholder="digite o celular" required>
+            </div>
+        </fieldset>
+
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="genero">Genero</label>
+                <label>
+                <input type="radio" name="genero" value="masculino" checked>masculino
+                </label>
+                <label>
+                <input type="radio" name="genero" value="feminino">feminino
+                </label>
+            </div>
+            <div class="campo">
+                <label for="idade">Idade</label>
+                <input type="number" min="18" max="110" id="idade">
+            </div>
+        </fieldset>
+        <fieldset class="grupo">
+            <div class="checkbox">
+                <label for="produto">Qual produto você deseja?</label><br><br>
+                <input type="checkbox" id="produto" name="financiamento" value="financiamento">
+                <label for="produto">Financiamento</label>
+                <input type="checkbox" id="produto" name="crédito pessoal" value="crédito pessoal">
+                <label for="produto">Crédito Pessoal</label>
+                <input type="checkbox" id="produto" name="cartão" value="cartão">
+                <label for="produto">Cartão</label>
+                <input type="checkbox" id="produto" name="investimento" value="investimento">
+                <label for="produto">Investimento</label>
+            </div>
+        </fieldset>
+        
+        <fieldset class="grupo">
+        <div class="campo">
+            <br>
+            <label>Expecifique sua proposta por gentileza</label>
+            <textarea row="10" style="width: 50em" maxlength="300" minlength="10" id="expecifique" nome="expecifique"></textarea>
+        </div>
+        </fieldset>
+
+        <button class="botao" type="submit">Enviar</button>
+
+
+
+    
+    </form>
+
+
+
+</body>
+<script src="./script.js"></script>
+
+</html>
