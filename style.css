@@ -3,10 +3,13 @@
     padding: 0;
 }
 
+  
 #titulo {
     font-family: Arial;
     color: black;
     margin-left: 36%;
+    
+        
     
 }
 
@@ -14,6 +17,8 @@
     font-family: Arial;
     color: black;
     margin-left: 42%;
+    
+   
 }
 
 fieldset{
@@ -89,3 +94,28 @@ fieldset.grupo .campo{
     display: inline-block;
 }
 
+.rodape{
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(0, 38, 255);
+  color: white;
+  text-align: center;
+  height: 2rem;
+    
+}
+
+.logo{
+    float: left;
+    width: 0%;
+    margin: 0;
+    padding: 0;
+    
+
+}
+#imgpos {
+	position: absolute; 
+	left: 0px;  
+	top: 0px; 
+	}

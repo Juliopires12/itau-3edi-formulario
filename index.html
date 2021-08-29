@@ -10,25 +10,29 @@
 
 </head>
  <body>
-
-    <div>
+<header>
+    <div class="cabeçalho">
        <h1 id="titulo">Cadastro de proposta </h1>
        <p id="subtitulo">Preencha seu cadastro</p>
        <br>
     </div>
+    <div class="logo">
+        <img src="imagem/logoo.jpeg" alt="200" width="150" id="imgpos" />
+        </div>
+</header>
 
     <form>
         <fieldset class="grupo">
             <div class="campo">
-                <label for="nome" >Nome</label>
+                <label for="nome" ><strong>Nome</strong></label>
                 <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
             </div>
             <div class="campo">
-                <label for="rg" >RG</label>
+                <label for="rg" ><strong>RG</label></label>
                 <input type="text" name="rg" id="rg" data-js="rg" placeholder="Digite seu rg">
             </div>
             <div class="campo">
-                <label for="cpf">CPF</label>
+                <label for="cpf"><strong>CPF</strong></label>
                 <input type="text" name="cpf" id="cpf" data-js="cpf" placeholder="Digite seu cpf" required>
             </div>
         </fieldset>
@@ -145,5 +149,11 @@
 
 </body>
 <script src="./script.js"></script>
+
+
+<footer class="rodape">
+<p></p><img src="imagem/logo.jpeg" alt="Todos os direitos reservados" whidt="30" height="20">Todos os diretos reservados</p>
+
+</footer>
 
 </html>
